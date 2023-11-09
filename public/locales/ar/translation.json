@@ -1,0 +1,26 @@
+{
+  "shipmentDetails": {
+    "ShipmentNo": "رقم الشحنة",
+    "LastUpdated": "اخر تحديث",
+    "MerchantName": "اسم التاجر",
+    "DeliveryTime": "موعد التسليم خلال",
+    "DELIVERED": "تم تسليم الشحنة",
+    "CANCELLED": "تم الغاء الشحنة",
+    "NOT_Delivered": "لم يتم تسليم الشحنة",
+    "NOT_Delivered_YET": "لم يتم تسليم الشحنة بعد",
+    "STATUS_DATE": "{{date, DATE_LONG}}",
+    "DELIVERY_TIME": "{{date, DATE_SHORT}}"
+  },
+  "Navbar": {
+    "TrackShipment": "تتبع الشحنة"
+  },
+  "Search": {
+    "TrackYourShipment": "تتبع شحنتك"
+  },
+  "shipmentDetailsTimeline": {
+    "ShipmentCreated": "تم إنشاء الشحنة",
+    "shipmentMerchant": "تم استلام الشحنة من التاجر",
+    "shipmentDelivery": "الشحنة خرجت للتسليم",
+    "Delivered": "تم التسليم"
+  }
+}

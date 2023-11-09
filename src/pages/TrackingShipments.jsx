@@ -1,5 +1,11 @@
+import Search from "./../Components/Search";
+
 const TrackingShipments = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Search />
+    </div>
+  );
 };
 
 export default TrackingShipments;

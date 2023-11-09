@@ -1,0 +1,26 @@
+{
+  "shipmentDetails": {
+    "ShipmentNo": "Tracking No.",
+    "LastUpdated": "Last updated",
+    "MerchantName": "Merchant name",
+    "DeliveryTime": "Delivery time",
+    "DELIVERED": "Delivered",
+    "CANCELLED": "Cancelled",
+    "NOT_Delivered": "Not Delivered",
+    "NOT_Delivered_YET": "Not Delivered Yet",
+    "STATUS_DATE": "{{date, DATE_LONG}}",
+    "DELIVERY_TIME": "{{date, DATE_SHORT}}"
+  },
+  "Navbar": {
+    "TrackShipment": "Track Shipment"
+  },
+  "Search": {
+    "TrackYourShipment": "Track Your Shipment"
+  },
+  "shipmentDetailsTimeline": {
+    "ShipmentCreated": "Shipment created",
+    "shipmentMerchant": "The merchant's shipment arrived.",
+    "shipmentDelivery": "The shipment is out for delivery",
+    "Delivered": "Delivered"
+  }
+}

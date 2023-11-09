@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   shipmentNumber: null,
+  allData: {},
 };
 
 const shipmentSlice = createSlice({
@@ -11,8 +12,11 @@ const shipmentSlice = createSlice({
     setShipmentNumber: (state, { payload }) => {
       state.shipmentNumber = payload;
     },
+    setAllData: (state, { payload }) => {
+      state.allData = payload;
+    },
   },
 });
 
-export const { setShipmentNumber } = shipmentSlice.actions;
+export const { setShipmentNumber, setAllData } = shipmentSlice.actions;
 export default shipmentSlice.reducer;
