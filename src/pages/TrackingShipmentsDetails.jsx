@@ -23,7 +23,7 @@ const TrackingShipmentsDetails = () => {
 
   if (isLoading) return <Spinner />;
 
-  if (error) return <p>{error.data.error}</p>;
+  if (error) return <p className="text-center">{error.data.error}</p>;
 
   if (data)
     return (
