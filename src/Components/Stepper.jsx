@@ -19,7 +19,7 @@ const Stepper = () => {
               : notDeliveredStatus
               ? "after:border-[#f9ba02]"
               : "after:border-[#f4050d]"
-          } relative flex w-full items-center text-white  after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block`}
+          } relative flex w-full items-center text-white  after:content-[''] after:w-full after:h-1 after:border-b  after:border-4 after:inline-block`}
         >
           <span
             className={`${
@@ -66,7 +66,7 @@ const Stepper = () => {
                 : notDeliveredStatus
                 ? "bg-[#f9ba02]"
                 : "bg-[#f4050d]"
-            } flex items-center justify-center w-5 h-5 bg-[#EEEEEE] rounded-full shrink-0`}
+            } flex items-center justify-center w-5 h-5 rounded-full shrink-0`}
           >
             <svg
               className="w-1.5 h-1.5 text-white"
@@ -90,8 +90,8 @@ const Stepper = () => {
         </li>
         <li
           className={`${
-            deliveredStatus && "after:border-[#35b600]"
-          } relative flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block`}
+            deliveredStatus ? "after:border-[#35b600]" : "after:border-gray-100"
+          } relative flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b  after:border-4 after:inline-block`}
         >
           <span
             className={`${
@@ -100,7 +100,7 @@ const Stepper = () => {
                 : notDeliveredStatus
                 ? "bg-[#f9ba02]"
                 : "bg-[#f4050d]"
-            } flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full shrink-0`}
+            } flex items-center justify-center w-10 h-10 rounded-full shrink-0`}
           >
             {deliveredStatus ? (
               <svg
@@ -143,17 +143,17 @@ const Stepper = () => {
         </li>
         <li
           className={`${
-            deliveredStatus && "after:border-[#35b600]"
+            deliveredStatus ? "after:border-[#35b600]" : "after:border-gray-100"
           } relative flex items-center w-full justify-center after:content-[''] after:w-full after:h-1 after:border-b after:border-4 after:inline-block`}
         >
           <span
             className={`${
-              deliveredStatus && "w-5 h-5 bg-[#35b600]"
-            } flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 shrink-0`}
+              deliveredStatus ? "w-5 h-5 bg-[#35b600]" : "w-10 h-10 bg-gray-100"
+            } flex items-center justify-center  rounded-full  shrink-0`}
           >
             {deliveredStatus ? (
               <svg
-                className="w-1.5 h-1.5 text-white lg:w-4 lg:h-4"
+                className="w-1.5 h-1.5 text-white "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -105,7 +105,7 @@ const Navbar = () => {
       </nav>
       <div
         className={
-          active ? "block absolute w-1/2 bg-white min-h-full" : "hidden"
+          active ? "block absolute w-1/2 bg-white min-h-full z-10" : "hidden"
         }
       >
         <Sidebar setActive={setActive} active={active} />

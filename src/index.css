@@ -8,3 +8,6 @@ body {
   font-family: 'Cairo', sans-serif;
 }
 
+td, th {
+  @apply p-4
+}

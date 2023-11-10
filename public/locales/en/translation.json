@@ -9,7 +9,8 @@
     "NOT_Delivered": "Not Delivered",
     "NOT_Delivered_YET": "Not Delivered Yet",
     "STATUS_DATE": "{{date, DATE_LONG}}",
-    "DELIVERY_TIME": "{{date, DATE_SHORT}}"
+    "DELIVERY_TIME": "{{date, DATE_SHORT}}",
+    "Shipment_Details": "Shipment details"
   },
   "Navbar": {
     "TrackShipment": "Track Shipment"
@@ -22,5 +23,39 @@
     "shipmentMerchant": "The merchant's shipment arrived.",
     "shipmentDelivery": "The shipment is out for delivery",
     "Delivered": "Delivered"
+  },
+  "table": {
+    "tableHeader": {
+      "hub": "Hub",
+      "date": "Date",
+      "time": "Time",
+      "details": "Details"
+    },
+    "tableDetails": {
+      "DATE": "{{date, DATE_SHORT_TABLE}}",
+      "TIME": "{{date, TIME_SHORT_TABLE}}"
+    },
+    "tableBody": {
+      "Cairo_Sorting_Facility": "Cairo Sorting Facility",
+      "Tanta_Hub": "Tanta Hub",
+      "Haram_Hub": "Haram Hub",
+      "FM_Reverse_Hub": "FM & Reverse Hub"
+    },
+    "tableStatus": {
+      "TICKET_CREATED": "ticket created",
+      "PACKAGE_RECEIVED": "package received",
+      "IN_TRANSIT": "in transit",
+      "OUT_FOR_DELIVERY": "out for delivery",
+      "WAITING_FOR_CUSTOMER_ACTION": "waiting for customer action",
+      "NOT_YET_SHIPPED": "not yet shipped",
+      "DELIVERED": "Delivered",
+      "CANCELLED": "Cancelled",
+      "DELIVERED_TO_SENDER": "delivered to sender"
+    },
+    "tableReasons": {
+      "RetryDelivery": "Retry delivery - the customer is not in the address.",
+      "Postponed": "Postponed - the customer requested postponement for another day.",
+      "CustomerNotAnswering": "Customer is not answering."
+    }
   }
 }

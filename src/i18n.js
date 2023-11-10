@@ -22,4 +22,16 @@ i18n.services.formatter.add("DATE_SHORT", (value, lng, _options) => {
     .toLocaleString(DateTime.DATE_MED);
 });
 
+i18n.services.formatter.add("DATE_SHORT_TABLE", (value, lng, _options) => {
+  return DateTime.fromJSDate(value)
+    .setLocale(lng)
+    .toLocaleString(DateTime.DATE_FULL);
+});
+
+i18n.services.formatter.add("TIME_SHORT_TABLE", (value, lng, _options) => {
+  return DateTime.fromJSDate(value)
+    .setLocale(lng)
+    .toLocaleString(DateTime.TIME_SIMPLE);
+});
+
 export default i18n;

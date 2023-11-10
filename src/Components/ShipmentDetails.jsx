@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import Spinner from "./Spinner";
 
 const ShipmentDetails = ({ data }) => {
   const { t } = useTranslation();
@@ -18,10 +19,10 @@ const ShipmentDetails = ({ data }) => {
   };
 
   return (
-    <Suspense fallback="loading...">
-      <div className="flex flex-col border-b border-b-[#CFCFCF] p-4 md:flex-row md:items-center md:justify-around">
-        <div className="my-4">
-          <p className="text-[#B2B1B2] text-sm font-medium">
+    <Suspense fallback={<Spinner />}>
+      <div className="md:flex  border-b border-b-[#CFCFCF] p-4 md:flex-row md:items-center md:justify-around">
+        <div className="md:w-1/4 md:flex md:flex-col my-4">
+          <p className="text-[#B2B1B2] text-sm font-medium ">
             {t("shipmentDetails.ShipmentNo")} {data?.TrackingNumber}
           </p>
           <p
@@ -36,7 +37,7 @@ const ShipmentDetails = ({ data }) => {
             {statusSwitch(data?.CurrentStatus?.state)}
           </p>
         </div>
-        <div className="my-4">
+        <div className="md:w-1/4 md:flex md:flex-col my-4">
           <p className="text-[#B2B1B2] text-sm font-medium">
             {t("shipmentDetails.LastUpdated")}
           </p>
@@ -44,7 +45,7 @@ const ShipmentDetails = ({ data }) => {
             {t("shipmentDetails.STATUS_DATE", { date: date })}
           </p>
         </div>
-        <div className="my-4">
+        <div className="md:w-1/4 md:flex md:flex-col my-4">
           <p className="text-[#B2B1B2] text-sm font-medium">
             {t("shipmentDetails.MerchantName")}
           </p>
@@ -52,7 +53,7 @@ const ShipmentDetails = ({ data }) => {
             {data?.provider}
           </p>
         </div>
-        <div className="my-4">
+        <div className="md:w-1/4 md:flex md:flex-col my-4">
           <p className="text-[#B2B1B2] text-sm font-medium">
             {t("shipmentDetails.DeliveryTime")}
           </p>

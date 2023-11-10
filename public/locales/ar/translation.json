@@ -9,7 +9,8 @@
     "NOT_Delivered": "لم يتم تسليم الشحنة",
     "NOT_Delivered_YET": "لم يتم تسليم الشحنة بعد",
     "STATUS_DATE": "{{date, DATE_LONG}}",
-    "DELIVERY_TIME": "{{date, DATE_SHORT}}"
+    "DELIVERY_TIME": "{{date, DATE_SHORT}}",
+    "Shipment_Details": "تفاصيل الشحنة"
   },
   "Navbar": {
     "TrackShipment": "تتبع الشحنة"
@@ -22,5 +23,39 @@
     "shipmentMerchant": "تم استلام الشحنة من التاجر",
     "shipmentDelivery": "الشحنة خرجت للتسليم",
     "Delivered": "تم التسليم"
+  },
+  "table": {
+    "tableHeader": {
+      "hub": "الفرع",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "details": "تفاصيل"
+    },
+    "tableDetails": {
+      "DATE": "{{date, DATE_SHORT_TABLE}}",
+      "TIME": "{{date, TIME_SHORT_TABLE}}"
+    },
+    "tableBody": {
+      "Cairo_Sorting_Facility": "منشأة الفرز بالقاهرة",
+      "Tanta_Hub": "فرع طنطا",
+      "Haram_Hub": "فرع الحرم",
+      "FM_Reverse_Hub": "إدارة الأساطيل"
+    },
+    "tableStatus": {
+      "TICKET_CREATED": "تم إنشاء التذكرة",
+      "PACKAGE_RECEIVED": "تم استلام الطرد",
+      "IN_TRANSIT": "في مرحلة انتقالية",
+      "OUT_FOR_DELIVERY": "خارج للتوصيل",
+      "WAITING_FOR_CUSTOMER_ACTION": "في انتظار إجراء العملاء",
+      "NOT_YET_SHIPPED": "لم يتم شحنه بعد",
+      "DELIVERED": "تم التوصيل",
+      "CANCELLED": "ألغيت",
+      "DELIVERED_TO_SENDER": "تم التسليم إلى المرسل"
+    },
+    "tableReasons": {
+      "RetryDelivery": "أعد محاولة التسليم - العميل ليس في العنوان",
+      "Postponed": "التأجيل - طلب العميل التأجيل ليوم آخر",
+      "CustomerNotAnswering": "العميل لا يجيب"
+    }
   }
 }
