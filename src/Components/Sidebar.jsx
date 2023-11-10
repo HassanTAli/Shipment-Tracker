@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import i18n from "../i18n";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const locales = {
   en: { title: "English" },
@@ -7,6 +9,8 @@ const locales = {
 };
 
 const Sidebar = ({ setActive, active }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const dir = i18n.dir(i18n.language);
     document.documentElement.dir = dir;
@@ -15,7 +19,7 @@ const Sidebar = ({ setActive, active }) => {
   return (
     <div className="m-4">
       <div
-        className="flex justify-end mr-4 text-lg"
+        className="flex justify-end mr-4 text-lg cursor-pointer"
         onClick={() => {
           setActive(!active);
         }}
@@ -42,6 +46,15 @@ const Sidebar = ({ setActive, active }) => {
           </li>
         ))}
       </ul>
+      <hr className="my-4" />
+      <div className="flex md:hidden flex-col gap-2 font-bold text-lg">
+        <Link to={"/"} onClick={() => setActive(!active)}>
+          {t("shipmentDetails.Home")}
+        </Link>
+        <Link to={"/pricing"} onClick={() => setActive(!active)}>
+          {t("shipmentDetails.pricing")}
+        </Link>
+      </div>
     </div>
   );
 };

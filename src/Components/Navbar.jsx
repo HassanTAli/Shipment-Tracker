@@ -1,4 +1,5 @@
 import { FiMenu } from "react-icons/fi";
+import { HiTranslate } from "react-icons/hi";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex items-center justify-between p-4 relative">
-        <Link className="w-4/12" to={"/"}>
+        <Link className="w-4/12 md:w-auto" to={"/"}>
           <div>
             {/* <img src={logo} alt="logo" className="w-full rtl:hidden" /> */}
             <span className=" rtl:hidden">
@@ -89,6 +90,10 @@ const Navbar = () => {
             </span>
           </div>
         </Link>
+        <div className="hidden md:flex gap-8 font-bold text-lg">
+          <Link to={"/"}>{t("shipmentDetails.Home")}</Link>
+          <Link to={"/pricing"}>{t("shipmentDetails.pricing")}</Link>
+        </div>
         <div className="flex items-center">
           <Link
             className="flex items-center text-[#FF0000] text-base font-semibold mr-4 rtl:ml-4"
@@ -98,14 +103,17 @@ const Navbar = () => {
               <p className="mr-1">{t("Navbar.TrackShipment")}</p>
             </div>
           </Link>
-          <div onClick={() => setActive(!active)}>
-            <FiMenu size={30} />
+          <div onClick={() => setActive(!active)} className="cursor-pointer">
+            <FiMenu size={30} className="md:hidden" />
+            <HiTranslate size={30} className="hidden md:block" />
           </div>
         </div>
       </nav>
       <div
         className={
-          active ? "block absolute w-1/2 bg-white min-h-full z-10" : "hidden"
+          active
+            ? "block absolute w-1/2 md:w-1/5 bg-white min-h-full z-10 rtl:border-l border-r rtl:border-l-slate-600 border-r-slate-600"
+            : "hidden"
         }
       >
         <Sidebar setActive={setActive} active={active} />

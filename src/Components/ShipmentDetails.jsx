@@ -20,7 +20,7 @@ const ShipmentDetails = ({ data }) => {
 
   return (
     <Suspense fallback={<Spinner />}>
-      <div className="md:flex  border-b border-b-[#CFCFCF] p-4 md:flex-row md:items-center md:justify-around">
+      <div className="md:flex  border-b border-b-[#CFCFCF] md:items-start p-4 md:flex-row  md:justify-around">
         <div className="md:w-1/4 md:flex md:flex-col my-4">
           <p className="text-[#B2B1B2] text-sm font-medium ">
             {t("shipmentDetails.ShipmentNo")} {data?.TrackingNumber}

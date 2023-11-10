@@ -32,7 +32,7 @@ const TrackingShipmentsDetails = () => {
           <ShipmentDetails data={data} />
           <Timeline />
         </div>
-        <div className="w-full">
+        <div className="w-full flex flex-col md:flex-row md:items-start">
           <Table />
           <Address />
         </div>

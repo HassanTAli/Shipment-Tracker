@@ -10,7 +10,14 @@
     "NOT_Delivered_YET": "Not Delivered Yet",
     "STATUS_DATE": "{{date, DATE_LONG}}",
     "DELIVERY_TIME": "{{date, DATE_SHORT}}",
-    "Shipment_Details": "Shipment details"
+    "Shipment_Details": "Shipment details",
+    "Address": "Address",
+    "AddressDetails": "Did not found address in API",
+    "problemReport": "Report the problem",
+    "error": "Please Enter Your Shipment Number",
+    "Home": "Home",
+    "selectTrack": "PLease Select Track Shipment",
+    "pricing": "Pricing"
   },
   "Navbar": {
     "TrackShipment": "Track Shipment"

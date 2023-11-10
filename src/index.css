@@ -11,3 +11,9 @@ body {
 td, th {
   @apply p-4
 }
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;/* even columns width , fix width of table too*/
+}

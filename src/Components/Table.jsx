@@ -25,7 +25,8 @@ const Table = () => {
         return t("table.tableStatus.DELIVERED");
       case "CANCELLED":
         return t("table.tableStatus.CANCELLED");
-
+      case "DELIVERED_TO_SENDER":
+        return t("table.tableStatus.DELIVERED_TO_SENDER");
       default:
         return status;
     }
@@ -46,14 +47,14 @@ const Table = () => {
   };
 
   return (
-    <div className="flex m-4 overflow-x-auto flex-col">
+    <div className="flex m-4 flex-col md:w-8/12 overflow-x-scroll">
       <div className="my-4">
         <p className="text-lg font-bold">
           {t("shipmentDetails.Shipment_Details")}
         </p>
       </div>
-      <table className="w-full border rounded-md border-[#CFCFCF] overflow-y-scroll">
-        <thead className="bg-[#FAFAFA] border-b border-b-[#CFCFCF]">
+      <table className="w-full border rounded-md border-[#CFCFCF]">
+        <thead className="bg-[#FAFAFA] border-b border-b-[#CFCFCF] w-full">
           <tr>
             <th className="min-w-[10rem]">{t("table.tableHeader.hub")}</th>
             <th className="min-w-[10rem]">{t("table.tableHeader.date")}</th>
@@ -61,7 +62,7 @@ const Table = () => {
             <th className="min-w-[10rem]">{t("table.tableHeader.details")}</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="block h-[34rem] overflow-auto">
           {TransitEvents &&
             TransitEvents.map((event, idx) => {
               const timestamp = new Date(event.timestamp);

@@ -24,7 +24,7 @@ const Search = () => {
         <h4 className="text-3xl leading-9 font-medium mt-4">
           {t("Search.TrackYourShipment")}
         </h4>
-        <div className="mt-4 border-2 border-[#e4e7ec] bg-[#e30613] rounded-lg w-11/12 flex items-center">
+        <div className="mt-4 md:w-2/5 border-2 border-[#e4e7ec] bg-[#e30613] rounded-lg w-11/12 flex items-center">
           <input
             type="text"
             name="track-number"
@@ -41,7 +41,7 @@ const Search = () => {
                 navigate(`/shipping-tracking/${shipmentNumber}`);
                 setError("");
               } else {
-                setError("Please Enter Your Tracking Number");
+                setError(t("shipmentDetails.error"));
               }
             }}
           >

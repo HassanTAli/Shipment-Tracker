@@ -10,7 +10,14 @@
     "NOT_Delivered_YET": "لم يتم تسليم الشحنة بعد",
     "STATUS_DATE": "{{date, DATE_LONG}}",
     "DELIVERY_TIME": "{{date, DATE_SHORT}}",
-    "Shipment_Details": "تفاصيل الشحنة"
+    "Shipment_Details": "تفاصيل الشحنة",
+    "Address": "العنوان",
+    "AddressDetails": "لا يوجد عنوان ف الداتا القادمة",
+    "problemReport": "الابلاغ عن المشكلة",
+    "error": "الرجاء إدخال رقم الشحنة الخاص بك",
+    "Home": "الصفحة الرئيسية",
+    "selectTrack": "الرجاء تحديد تتبع الشحنة",
+    "pricing": "الاسعار"
   },
   "Navbar": {
     "TrackShipment": "تتبع الشحنة"

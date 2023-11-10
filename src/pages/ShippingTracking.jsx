@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Home from "./Home";
 import TrackingShipments from "./TrackingShipments";
 import TrackingShipmentsDetails from "./TrackingShipmentsDetails";
+import Pricing from "../Components/Pricing";
 
 const ShippingTracking = () => {
   return (
@@ -16,6 +17,7 @@ const ShippingTracking = () => {
           path="/shipping-tracking/:id"
           element={<TrackingShipmentsDetails />}
         />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </>
   );
